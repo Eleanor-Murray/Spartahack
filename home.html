@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <div class="w3-center">
+  <h4><i>CONFIDENTIAL CARE</i></h4>
+  <h1 class="w3-xxxlarge w3-animate-bottom">Safe + Sound</h1>
+  </div>
+</header>
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:70px">
+  <h1>Temperature</h1><br>
+  <i style="font-size:120px"></i>
+  <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_561237.png&f=1&nofb=1&ipt=5c82f9e6f9cce0470f3807233d0da1921d7eeec62e63a4f45977c1947cf3bb70&ipo=images" height="150" ></img>
+  <p>Current Temp: {{temp}} C</p>
+  <p>Current Humidity: {{humi}} %</p>
+  <p>Temperature Data Last Updated: 1/29/23 </p>
+  <p>Average Temperature (Month): 20 C </p>
+  <p>Average Humidity (Month): 72% </p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:70px">
+  <h1>Light</h1><br>
+  <i style="font-size:120px"></i>
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.vectorstock.com%2Fi%2F1000x1000%2F10%2F86%2Flight-bulb-icon-simple-black-line-symbol-isolated-vector-15871086.jpg&f=1&nofb=1&ipt=f94f8b2fa6e3d36d33f2704e5cf6923bf4c93edd97af921660c7f8442f308de6&ipo=images" height="150"></img> 
+ <p>Current Light Level: {{light}}</p>
+ <p>Light Level Last Updated: 1/29/23</p>
+ <p>Average Light Level (Month): Dim </p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:70px">
+  <h1>Noise Level</h1><br>
+  <i style="font-size:120px"></i>
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_559340.png&f=1&nofb=1&ipt=685f0564c226e6ce7ef313340b52eb1d61eef159c28730f15c69833c0f5b6bd1&ipo=images" height="150"></img>
+  <p>Current Noise Level: {{noise}}</p>
+  <p>Noise Level Last Updated: 1/29/23</p>
+  <p>Average Noise Level (Month): Medium</p>
+  </div>
+</div>
+</div>
+
+<hr>
+<h2 class="w3-center">How are you today?</h2>
+<div class="w3-center">
+  <br>
+  <a class="w3-button" style="background:green; width:300px"><h1>Amazing!</h1></a>
+  <a class="w3-button" style="background: orange; width:300px"><h1>Alright</h1></a>
+  <a class="w3-button" style="background: yellow; width:300px"><h1>Sick</h1></a>
+  <a class="w3-button" style="background: red; width:300px"><h1>Need Assistance</h1></a>
+</div>
+</h2>
+<br>
+
+<h2 class="w3-center">Memories</h2>
+<div class="w3-content" style="max-width:800px;position:relative">
+
+<img class="mySlides w3-animate-opacity" src="https://www.goodfreephotos.com/albums/canada/alberta/jasper-national-park/fog-on-the-high-mountains-with-trees-in-jasper-national-park-alberta-canada.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2016%2F06%2F23%2F383074-New_Zealand-landscape.jpg&f=1&nofb=1&ipt=9e09021f560423870f06d9aedefc4d8385951ec8ec2883b6af5635890c9297a6&ipo=images" style="width:100%">
+<a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">❮</a>
+<a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">❯</a>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h3>Safe + Sound</h3>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "100%";
+  x.style.fontSize = "40px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+    activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+// Accordions
+function myAccFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+  slideIndex = slideIndex + n;
+  showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 5;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+</body>
+</html>
